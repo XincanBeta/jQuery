@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script>
+  $.extend.apply( null, [ true, { "a" : 1, "b" : 2 } ] );
+  console.log(window.a);
+
+  //window.location.reload();
+  $.extend.apply( null, [ true, { "a" : 1, "b" : 2 } ].concat( { "c" : 3, "d" : 4 } ) );
+  console.log(window.a)
+
+
+</script>
+</body>
+</html>
